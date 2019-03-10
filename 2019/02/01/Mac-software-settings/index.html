@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Computer settings,Mac,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前言曾经我也是一个爱折腾的娃，随着年纪增大，慢慢的不爱折腾了，开始记录一些折腾的事。算是为了自己以后配置MAC而准备的。 Syncthing至从resilio sync被墙以后，现在无精力一一配置服务器中转，因此转到开源软件Syncthing。Syncthing是一个好东西，可以让NAS，MAC、Windows和Linux全平台进行同步。 Keepass对于密码管理我用的是KeePass软件，对于">
+<meta name="keywords" content="Computer settings,Mac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac软件配置">
+<meta property="og:url" content="http://blog.careflysky.top/2019/02/01/Mac-software-settings/index.html">
+<meta property="og:site_name" content="careflysky">
+<meta property="og:description" content="前言曾经我也是一个爱折腾的娃，随着年纪增大，慢慢的不爱折腾了，开始记录一些折腾的事。算是为了自己以后配置MAC而准备的。 Syncthing至从resilio sync被墙以后，现在无精力一一配置服务器中转，因此转到开源软件Syncthing。Syncthing是一个好东西，可以让NAS，MAC、Windows和Linux全平台进行同步。 Keepass对于密码管理我用的是KeePass软件，对于">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-10T06:56:01.619Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mac软件配置">
+<meta name="twitter:description" content="前言曾经我也是一个爱折腾的娃，随着年纪增大，慢慢的不爱折腾了，开始记录一些折腾的事。算是为了自己以后配置MAC而准备的。 Syncthing至从resilio sync被墙以后，现在无精力一一配置服务器中转，因此转到开源软件Syncthing。Syncthing是一个好东西，可以让NAS，MAC、Windows和Linux全平台进行同步。 Keepass对于密码管理我用的是KeePass软件，对于">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.careflysky.top/2019/02/01/Mac-software-settings/">
+
+
+
+
+
+  <title>Mac软件配置 | careflysky</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?623954f2dfa9d2160401446cf2302985";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">careflysky</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.careflysky.top/2019/02/01/Mac-software-settings/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="careflysky">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="careflysky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Mac软件配置</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-01T00:00:00-08:00">
+                2019-02-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Computer-settings/" itemprop="url" rel="index">
+                    <span itemprop="name">Computer settings</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>曾经我也是一个爱折腾的娃，随着年纪增大，慢慢的不爱折腾了，开始记录一些折腾的事。算是为了自己以后配置MAC而准备的。</p>
+<h1 id="Syncthing"><a href="#Syncthing" class="headerlink" title="Syncthing"></a>Syncthing</h1><p>至从<a href="https://www.resilio.com/individuals/" target="_blank" rel="noopener">resilio sync</a>被墙以后，现在无精力一一配置服务器中转，因此转到开源软件Syncthing。<br><a href="https://syncthing.net/" target="_blank" rel="noopener">Syncthing</a>是一个好东西，可以让NAS，MAC、Windows和Linux全平台进行同步。</p>
+<h1 id="Keepass"><a href="#Keepass" class="headerlink" title="Keepass"></a>Keepass</h1><p>对于密码管理我用的是<a href="https://keepass.info/download.html" target="_blank" rel="noopener">KeePass</a>软件，对于在线在可以通过<a href="https://keeweb.info/" target="_blank" rel="noopener">KeeWeb</a>来配置，目前可以在线版<a href="https://app.keeweb.info/" target="_blank" rel="noopener">Online Web App</a>和Onedrive来配合使用.</p>
+<h1 id="IINA"><a href="#IINA" class="headerlink" title="IINA"></a>IINA</h1><p>目前比较喜欢的视频播放软件<a href="https://iina.io/" target="_blank" rel="noopener">IINA</a>。</p>
+<h1 id="Zotero"><a href="#Zotero" class="headerlink" title="Zotero"></a>Zotero</h1><p>所以科研工作者都有自己的文献管理软件，我从<a href="http://www.jabref.org/" target="_blank" rel="noopener">Jabref</a>转到<a href="https://www.zotero.org/download/" target="_blank" rel="noopener">Zotero</a>。</p>
+<h2 id="软件的配置与安装"><a href="#软件的配置与安装" class="headerlink" title="软件的配置与安装"></a>软件的配置与安装</h2><ol>
+<li>安装</li>
+<li><p>更改目录, 建立符号链接, 删除zotero目录下storage目录.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> zotero目录</span><br><span class="line">ln -s storage ～\Individual\reference\</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置</p>
+<blockquote>
+<ul>
+<li>同步账号为<a href="mailto:lyzinfo@gmail.com" target="_blank" rel="noopener">lyzinfo@gmail.com</a>   </li>
+<li>File Syncing勾去掉</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="软件的相关插件"><a href="#软件的相关插件" class="headerlink" title="软件的相关插件"></a>软件的相关插件</h2><ol>
+<li><a href="https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.1.45" target="_blank" rel="noopener">Better BibTeX</a><blockquote>
+<p>Citation key Format: <code>[auth][year]P[firstpage]</code><br>Field to omit form export: <code>abstract,keywords,file</code></p>
+</blockquote>
+</li>
+</ol>
+<h1 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h1>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Computer-settings/" rel="tag"># Computer settings</a>
+          
+            <a href="/tags/Mac/" rel="tag"># Mac</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/01/windows-software-settings/" rel="prev" title="windows软件配置">
+                windows软件配置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">careflysky</p>
+              <p class="site-description motion-element" itemprop="description">The way that can be spoken of is not the constant way; The name that can be named is not the constant name.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Syncthing"><span class="nav-number">2.</span> <span class="nav-text">Syncthing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Keepass"><span class="nav-number">3.</span> <span class="nav-text">Keepass</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IINA"><span class="nav-number">4.</span> <span class="nav-text">IINA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Zotero"><span class="nav-number">5.</span> <span class="nav-text">Zotero</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#软件的配置与安装"><span class="nav-number">5.1.</span> <span class="nav-text">软件的配置与安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件的相关插件"><span class="nav-number">5.2.</span> <span class="nav-text">软件的相关插件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VSCode"><span class="nav-number">6.</span> <span class="nav-text">VSCode</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">careflysky</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
