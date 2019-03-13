@@ -23,18 +23,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[windows软件配置]]></title>
-    <url>%2F2019%2F02%2F01%2Fwindows-software-settings%2F</url>
-    <content type="text"><![CDATA[windows软件配置每次重新重装系统，都是心累的过程，所以每次都是用到什么再装什么。但是发现随着电脑的增多，又希望每一台电脑都像家里的电脑那样用的舒服，同时省去大量的时间查询有用的消息（谁叫度娘现在越来越不好用），故写下来方便查询。 VSCode 插件 Bracket Pair Colorizer 2 Latex Workshop Maple Keepass 下载地址 https://keepass.info/ Syncthing 下载地址 Syncthing Core: https://syncthing.net/ 软件设置 在syncthing目录下新建一个Syncthing.vbs文件，文件内容如下： CreateObject(“WScript.Shell”).Run “.\syncthing.exe”,0 点击Syncthing.vbs就可以访问syncthing: http://127.0.0.1:8384，并且隐藏界面 右键start.vbs发送到桌面快捷方式, 然后win+R运行 shell:startup, 将快捷方式移动到弹出来的窗口里面就可以实现 Zotero 下载地址 https://www.zotero.org/download/ 软件设置 安装 更改目录, 建立符号链接, 删除zotero目录下storage目录. 123&gt;&gt; cd zotero目录&gt;&gt; mklink /D storage D:\Individual\reference\&gt;&gt; 设置 同步账号为lyzinfo@gmail.com File Syncing勾去掉 插件 Better BibTeX https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.1.45 Citation key Format: [auth][year]P[firstpage] Field to omit form export: abstract,keywords,file git 下载地址 https://git-scm.com/ tevlive 下载地址 https://tug.org/texlive/ 配置texlive+vscode https://ddswhu.me/posts/2018-04/vs-code-for-latex/ 正向和反向搜索12345678910111213&gt; &quot;latex-workshop.view.pdf.external.synctex&quot;: &#123;&gt; &quot;command&quot;: &quot;E:/Programs/SumatraPDF/SumatraPDF.exe&quot;,&gt; &quot;args&quot;: [&gt; &quot;-forward-search&quot;,&gt; &quot;%TEX%&quot;,&gt; &quot;%LINE%&quot;,&gt; &quot;-reuse-instance&quot;,&gt; &quot;-inverse-search&quot;,&gt; &quot;\&quot;C:\\opt\\Microsoft VS Code\\Code.exe\&quot; -g \&quot;%f:%l\&quot;&quot;,&gt; &quot;%PDF%&quot;,&gt; ]&gt; &#125;,&gt; 注意事项：如果通过VSCode编辑器内预览按钮打开SumatraPDF阅读器则无法进行反向搜索，如需要进行搜索，请先单独打开SumatraPDF，再通过预览按钮预览PDF 7zip 下载地址 https://www.7-zip.org/ 参考文献[1] https://blog.csdn.net/IKQMKSQM/article/details/82116343[2] https://ddswhu.me/posts/2018-04/vs-code-for-latex/[3] https://zhuanlan.zhihu.com/p/38178015]]></content>
-      <categories>
-        <category>Computer settings</category>
-      </categories>
-      <tags>
-        <tag>Computer settings</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Mac软件配置]]></title>
     <url>%2F2019%2F02%2F01%2FMac-software-settings%2F</url>
     <content type="text"><![CDATA[前言曾经我也是一个爱折腾的娃，随着年纪增大，慢慢的不爱折腾了，开始记录一些折腾的事。算是为了自己以后配置MAC而准备的。 Syncthing至从resilio sync被墙以后，现在无精力一一配置服务器中转，因此转到开源软件Syncthing。Syncthing是一个好东西，可以让NAS，MAC、Windows和Linux全平台进行同步。 Keepass对于密码管理我用的是KeePass软件，对于在线在可以通过KeeWeb来配置，目前可以在线版Online Web App和Onedrive来配合使用. IINA目前比较喜欢的视频播放软件IINA。 Zotero所以科研工作者都有自己的文献管理软件，我从Jabref转到Zotero。 软件的配置与安装 安装 更改目录, 建立符号链接, 删除zotero目录下storage目录. 12cd zotero目录ln -s storage ～\Individual\reference\ 设置 同步账号为lyzinfo@gmail.com File Syncing勾去掉 软件的相关插件 Better BibTeX Citation key Format: [auth][year]P[firstpage]Field to omit form export: abstract,keywords,file VSCode]]></content>
@@ -44,6 +32,18 @@
       <tags>
         <tag>Computer settings</tag>
         <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[windows软件配置]]></title>
+    <url>%2F2019%2F02%2F01%2Fwindows-software-settings%2F</url>
+    <content type="text"><![CDATA[windows软件配置每次重新重装系统，都是心累的过程，所以每次都是用到什么再装什么。但是发现随着电脑的增多，又希望每一台电脑都像家里的电脑那样用的舒服，同时省去大量的时间查询有用的消息（谁叫度娘现在越来越不好用），故写下来方便查询。 VSCode 插件 Bracket Pair Colorizer 2 Latex Workshop Maple Keepass 下载地址 https://keepass.info/ Syncthing 下载地址 Syncthing Core: https://syncthing.net/ 软件设置 在syncthing目录下新建一个Syncthing.vbs文件，文件内容如下： CreateObject(“WScript.Shell”).Run “.\syncthing.exe”,0 点击Syncthing.vbs就可以访问syncthing: http://127.0.0.1:8384，并且隐藏界面 右键start.vbs发送到桌面快捷方式, 然后win+R运行 shell:startup, 将快捷方式移动到弹出来的窗口里面就可以实现 Zotero 下载地址 https://www.zotero.org/download/ 软件设置 安装 更改目录, 建立符号链接, 删除zotero目录下storage目录. 123&gt;&gt; cd zotero目录&gt;&gt; mklink /D storage D:\Individual\reference\&gt;&gt; 设置 同步账号为lyzinfo@gmail.com File Syncing勾去掉 插件 Better BibTeX https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.1.45 Citation key Format: [auth][year]P[firstpage] Field to omit form export: abstract,keywords,file git 下载地址 https://git-scm.com/ tevlive 下载地址 https://tug.org/texlive/ 配置texlive+vscode https://ddswhu.me/posts/2018-04/vs-code-for-latex/ 正向和反向搜索12345678910111213&gt; &quot;latex-workshop.view.pdf.external.synctex&quot;: &#123;&gt; &quot;command&quot;: &quot;E:/Programs/SumatraPDF/SumatraPDF.exe&quot;,&gt; &quot;args&quot;: [&gt; &quot;-forward-search&quot;,&gt; &quot;%TEX%&quot;,&gt; &quot;%LINE%&quot;,&gt; &quot;-reuse-instance&quot;,&gt; &quot;-inverse-search&quot;,&gt; &quot;\&quot;C:\\opt\\Microsoft VS Code\\Code.exe\&quot; -g \&quot;%f:%l\&quot;&quot;,&gt; &quot;%PDF%&quot;,&gt; ]&gt; &#125;,&gt; 注意事项：如果通过VSCode编辑器内预览按钮打开SumatraPDF阅读器则无法进行反向搜索，如需要进行搜索，请先单独打开SumatraPDF，再通过预览按钮预览PDF 7zip 下载地址 https://www.7-zip.org/ 参考文献[1] https://blog.csdn.net/IKQMKSQM/article/details/82116343[2] https://ddswhu.me/posts/2018-04/vs-code-for-latex/[3] https://zhuanlan.zhihu.com/p/38178015]]></content>
+      <categories>
+        <category>Computer settings</category>
+      </categories>
+      <tags>
+        <tag>Computer settings</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
 </search>
